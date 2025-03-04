@@ -11,7 +11,7 @@ class Ecuaciones_cua:
             except ValueError:
                 print('\nELEMENTOS INVALIDOS')
                 opcion="sinERROR"
-        print("\n"opcion)
+        print("\n  ",opcion)
         obj=Ecuaciones_cua()
         obj.operaciones(a,b,c)
 
@@ -36,7 +36,7 @@ class Ecuaciones_cua:
         # Resultado x_dos
         x_dos = b_uno - raiz
         x_dos = x_dos / a_uno
-        print('El resultado es: ')
+        print('\nEl resultado es: ')
         print('x=',x_uno)
         print('x=',x_dos)
         obj=Ecuaciones_cua()
