@@ -9,9 +9,9 @@ class Ecuaciones_cua:
                 c=float(input('Ingrese su termino "C": '))
                 opcion="ELEMENTOS VALIDOS"
             except ValueError:
-                print('ELEMENTOS INVALIDOS')
+                print('\nELEMENTOS INVALIDOS')
                 opcion="sinERROR"
-        print(opcion)
+        print("\n"opcion)
         obj=Ecuaciones_cua()
         obj.operaciones(a,b,c)
 
@@ -27,7 +27,7 @@ class Ecuaciones_cua:
         if raiz>=0:
             raiz=mt.sqrt(raiz)   
         else:
-            print('Tu ecuacion no tiene solucion en los numero reales')
+            print('\nTu ecuacion no tiene solucion en los numero reales')
             obj=Ecuaciones_cua()
             obj.final()
         # Resultado x_uno
@@ -45,7 +45,7 @@ class Ecuaciones_cua:
     def final(self):
         # sys para terminar un programa 
         import sys 
-        print('Gracias por usar el programa')
+        print('\n\nGracias por usar el programa')
         sys.exit()
         
     
